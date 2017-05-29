@@ -145,17 +145,18 @@ kubectl describe services nginx
 ```
 
 ```
-Name:			nginx
-Namespace:		default
-Labels:			app=nginx
-Selector:		app=nginx
-Type:			LoadBalancer
-IP:			
-LoadBalancer Ingress:	104.155.179.91, 104.199.198.18, 104.196.155.68, 23.251.129.13
-Port:			http	80/TCP
-Endpoints:		<none>
-Session Affinity:	None
-No events.
+Name:                   nginx
+Namespace:              default
+Labels:                 run=nginx
+Annotations:            <none>
+Selector:               run=nginx
+Type:                   NodePort
+IP:
+Port:                   http    80/TCP
+NodePort:               http    32110/TCP
+Endpoints:              <none>
+Session Affinity:       None
+Events:                 <none>
 ```
 
 ### List Services
